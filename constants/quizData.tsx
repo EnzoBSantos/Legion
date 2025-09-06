@@ -86,7 +86,7 @@ export const QUIZ_DATA: ScreenData[] = [
         </div>
       </div>
     ),
-    imageUrl: 'https://i.imgur.com/8a2zQ2s.png',
+    imageUrl: 'https://i.imgur.com/N2a2C2g.jpeg',
     buttonText: 'Sí, Continuar'
   },
   {
@@ -216,7 +216,7 @@ export const QUIZ_DATA: ScreenData[] = [
     title: '¿Qué sería más valioso para ti hoy por 19 reales?',
     comparisonOptions: [
         { title: 'Una suscripción de OnlyFans', subtitle: '(¿en serio? ¿pagarías por eso?...)' , image: 'https://i.imgur.com/2c1Q1gM.png', value: 'onlyfans' },
-        { title: 'Conseguir vencer el NoFap September y recuperar todo lo que está siendo destruido', subtitle: '', image: 'https://i.imgur.com/8a2zQ2s.png', value: 'nofap' }
+        { title: 'Conseguir vencer el NoFap September y recuperar todo lo que está siendo destruido', subtitle: '', image: 'https://i.imgur.com/N2a2C2g.jpeg', value: 'nofap' }
     ]
   },
   {
