@@ -84,11 +84,9 @@ export const QUIZ_DATA: ScreenData[] = [
           <p>Por eso septiembre se convirtió en el mes oficial del desafío: 30 días sin pornografía.</p>
           <p className="font-bold text-white text-xl">No es sobre represión, es sobre <HighlightYellow>libertad real</HighlightYellow>.</p>
         </div>
-        <div className="my-6">
-            <img src='https://i.imgur.com/8a2zQ2s.png' alt="Una persona consumiendo contenido en una tablet" className="rounded-lg max-h-96 mx-auto" />
-        </div>
       </div>
     ),
+    imageUrl: 'https://i.imgur.com/8a2zQ2s.png',
     buttonText: 'Sí, Continuar'
   },
   {

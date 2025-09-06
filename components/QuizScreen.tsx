@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ScreenType } from '../types';
 import type { ScreenData } from '../types';
@@ -109,7 +110,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ screenData, onNext }) => {
                         {screenData.infoContent}
                         {screenData.imageUrl && (
                             <div className="my-6">
-                                <img src={screenData.imageUrl} alt="info" className="rounded-lg max-h-96" />
+                                <img src={screenData.imageUrl} alt="info" className="rounded-lg max-h-96 mx-auto block" />
                                 {screenData.source && <p className="text-xs text-gray-500 mt-2">Fonte: <a href="#" className="underline">{screenData.source}</a></p>}
                             </div>
                         )}
