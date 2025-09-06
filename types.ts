@@ -10,7 +10,7 @@ export enum ScreenType {
   COMPARISON_CHOICE,
   LOADING,
   RESULTS,
-  FINAL_INFO
+  OFFER_PAGE
 }
 
 export interface ScreenOption {

@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { QUIZ_DATA } from './constants/quizData';
 import { ScreenType } from './types';
@@ -6,6 +5,7 @@ import type { Answers } from './types';
 import QuizScreen from './components/QuizScreen';
 import LoadingScreen from './components/LoadingScreen';
 import ResultsScreen from './components/ResultsScreen';
+import OfferScreen from './components/OfferScreen';
 import ProgressBar from './components/ProgressBar';
 import Logo from './components/Logo';
 
@@ -26,7 +26,7 @@ const App: React.FC = () => {
   };
 
   const progress = useMemo(() => {
-    if (currentScreenData.type === ScreenType.LOADING || currentScreenData.type === ScreenType.RESULTS) {
+    if (currentScreenData.type === ScreenType.LOADING || currentScreenData.type === ScreenType.RESULTS || currentScreenData.type === ScreenType.OFFER_PAGE) {
       return 100;
     }
     return Math.round(((currentScreenIndex + 1) / totalScreens) * 100);
@@ -38,6 +38,8 @@ const App: React.FC = () => {
         return <LoadingScreen onLoadingComplete={() => handleNext()} />;
       case ScreenType.RESULTS:
         return <ResultsScreen onNext={() => handleNext()} />;
+      case ScreenType.OFFER_PAGE:
+        return <OfferScreen />;
       default:
         return <QuizScreen screenData={currentScreenData} onNext={handleNext} />;
     }
@@ -49,9 +51,11 @@ const App: React.FC = () => {
         <Logo />
       </header>
       <main className="w-full max-w-2xl mx-auto flex-grow flex flex-col items-center">
-        <div className="w-full mb-12">
-           <ProgressBar progress={progress} />
-        </div>
+        { currentScreenData.type !== ScreenType.OFFER_PAGE && (
+            <div className="w-full mb-12">
+            <ProgressBar progress={progress} />
+            </div>
+        )}
         <div className="w-full text-center">
             {renderScreen()}
         </div>

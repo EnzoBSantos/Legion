@@ -59,7 +59,6 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ screenData, onNext }) => {
                 );
 
             case ScreenType.SINGLE_CHOICE:
-            case ScreenType.FINAL_INFO:
                 return (
                     <div className={optionContainerClasses}>
                         {screenData.infoContent}
@@ -125,10 +124,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ screenData, onNext }) => {
                 return (
                     <div className="mt-8 w-full max-w-xl mx-auto grid md:grid-cols-2 gap-6">
                         {screenData.comparisonOptions?.map(option => (
-                            <button key={option.value} onClick={() => onNext({ [screenData.id]: option.value })} className="bg-slate-800 border-2 border-yellow-500 rounded-lg p-4 flex flex-col items-center hover:bg-slate-700 transition-colors h-full">
-                                <div className="bg-white p-2 rounded-md mb-4">
-                                    <img src={option.image} alt={option.title} className="w-32 h-32 object-cover rounded-md"/>
-                                </div>
+                            <button key={option.value} onClick={() => onNext({ [screenData.id]: option.value })} className="bg-slate-800 border-2 border-yellow-500 rounded-lg p-4 flex flex-col items-center justify-center hover:bg-slate-700 transition-colors h-full">
                                 <div className="flex-grow flex flex-col justify-center text-center">
                                     <p className="font-bold text-lg text-yellow-400">{option.title}</p>
                                     <p className="text-sm text-slate-400">{option.subtitle}</p>
@@ -146,7 +142,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ screenData, onNext }) => {
     return (
         <div className="w-full flex flex-col items-center animate-fade-in">
             <h1 className="text-3xl md:text-4xl font-bold leading-tight max-w-2xl">{screenData.title}</h1>
-             {screenData.subtitle && screenData.type !== ScreenType.GENDER_SELECTION && screenData.type !== ScreenType.FINAL_INFO && (
+             {screenData.subtitle && screenData.type !== ScreenType.GENDER_SELECTION && (
                 <p className="mt-4 text-xl text-slate-300 whitespace-pre-line">{screenData.subtitle}</p>
             )}
             {renderOptions()}

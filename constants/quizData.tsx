@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ScreenType } from '../types';
 import type { ScreenData } from '../types';
@@ -86,7 +85,6 @@ export const QUIZ_DATA: ScreenData[] = [
         </div>
       </div>
     ),
-    imageUrl: 'https://i.imgur.com/N2a2C2g.jpeg',
     buttonText: 'Sí, Continuar'
   },
   {
@@ -102,19 +100,6 @@ export const QUIZ_DATA: ScreenData[] = [
       { text: 'Indisposición para hacer cualquier cosa', value: 'unwillingness', emoji: '😫' }
     ],
     buttonText: 'Continuar'
-  },
-  {
-    id: 'desire_to_stop',
-    type: ScreenType.SINGLE_CHOICE,
-    title: 'De 1 a 10, ¿cuánto te gustaría que esto dejara de suceder?',
-    subtitle: 'Siendo 1 = No me gustaría\nY 10 = Me gustaría mucho que esto parara',
-    layout: 'grid',
-    options: [
-        { text: '1', value: '1' },
-        { text: '4', value: '4' },
-        { text: '7', value: '7' },
-        { text: '10', value: '10' }
-    ]
   },
    {
     id: 'misinformation',
@@ -151,7 +136,6 @@ export const QUIZ_DATA: ScreenData[] = [
                     <span className="text-gray-500">🔍</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-bold my-2 text-gray-900">La industria del entretenimiento para adultos crece en la Pandemia y supera a sitios como CNN, Netflix y Amazon</h2>
-                <img src="https://i.imgur.com/uCwnf89.png" alt="Noticia" className="w-full rounded-md mt-2"/>
             </div>
       </div>
     ),
@@ -250,23 +234,8 @@ export const QUIZ_DATA: ScreenData[] = [
     ]
   },
   {
-    id: 'final_pitch',
-    type: ScreenType.FINAL_INFO,
-    title: <>Con el <HighlightYellow>*****</HighlightYellow> tú:</>,
-    infoContent: (
-        <ul className="text-left text-lg space-y-4 max-w-lg mx-auto text-slate-300">
-            <li className="flex items-start"><span className="mr-3 text-xl">🎯</span> Descubres el <HighlightYellow>gatillo mental</HighlightYellow> que transforma recaídas en fuerza de voluntad.</li>
-            <li className="flex items-start"><span className="mr-3 text-xl">⚡</span> Recuperas tu <HighlightYellow>energía y disposición</HighlightYellow> ya en los primeros días.</li>
-            <li className="flex items-start"><span className="mr-3 text-xl">🧠</span> <HighlightYellow>Hackeas</HighlightYellow> tu dopamina para sentir <HighlightYellow>placer real</HighlightYellow> en cosas simples otra vez.</li>
-            <li className="flex items-start"><span className="mr-3 text-xl">😎</span> Te da más <HighlightYellow>autoconfianza</HighlightYellow> para hablar y relacionarte con mujeres sin trabas.</li>
-            <li className="flex items-start"><span className="mr-3 text-xl">🏆</span> Vences los primeros 7 días (los más difíciles) del desafío sin dificultades.</li>
-            <li className="flex items-start"><span className="mr-3 text-xl">🧘</span> Libera espacio mental para tener <HighlightYellow>claridad y foco</HighlightYellow> en lo que realmente importa.</li>
-        </ul>
-    ),
-    subtitle: '¿Quieres ser parte de esto?',
-    options: [
-        { text: '¡Sí, quiero mucho!', value: 'yes' },
-        { text: 'No', value: 'no' }
-    ]
+    id: 'offer',
+    type: ScreenType.OFFER_PAGE,
+    title: 'Oferta Especial'
   }
 ];
