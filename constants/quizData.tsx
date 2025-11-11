@@ -10,7 +10,7 @@ export const QUIZ_DATA: ScreenData[] = [
   {
     id: 'gender',
     type: ScreenType.GENDER_SELECTION,
-    title: <>Ya es Septiembre y la guerra ha comenzado, ¿quieres finalmente liberarte de los vicios y aprovechar todos los beneficios que <HighlightYellow>1 mes en NoFap</HighlightYellow> puede traer?</>,
+    title: <>¿Quieres finalmente liberarte de los vicios y aprovechar todos los beneficios que <HighlightYellow>1 mes en NoFap</HighlightYellow> puede traer?</>,
     subtitle: 'Responde y recibe un protocolo personalizado para hacerte vencer:',
     buttonText: 'Sí, soy Hombre',
     options: [{ text: 'Soy Mujer', value: 'woman' }],
