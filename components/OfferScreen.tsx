@@ -113,23 +113,12 @@ const OfferScreen: React.FC = () => {
 
       {/* CTA Button */}
        <a 
-          href="https://pay.hotmart.com/P101766250X" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full max-w-md bg-yellow-500 text-slate-900 font-bold py-4 px-6 rounded-lg text-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          href="https://pay.hotmart.com/S102474434N?checkoutMode=2" 
+          onClick={(e) => e.preventDefault()}
+          className="hotmart-fb w-full max-w-md bg-yellow-500 text-slate-900 font-bold py-4 px-6 rounded-lg text-2xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
         >
           ¡Quiero asegurarlo ahora!
         </a>
-
-        <div className="mt-4">
-            <a 
-                onClick={(e) => e.preventDefault()} 
-                href="https://pay.hotmart.com/S102474434N?checkoutMode=2" 
-                className="hotmart-fb hotmart__button-checkout"
-            >
-                <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar agora" />
-            </a>
-        </div>
 
       {/* Guarantee */}
       <div className="mt-12 max-w-xl mx-auto border-t border-slate-700 pt-8">
