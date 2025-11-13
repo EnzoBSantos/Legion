@@ -65,12 +65,12 @@ const OfferScreen: React.FC = () => {
 
       {/* Offer */}
       <div className="text-slate-300 text-lg space-y-4 max-w-2xl mx-auto mb-12 text-left md:text-center">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">Aviso: Oferta de Septiembre terminando</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 text-center">Aviso: Oferta por tiempo limitado</h2>
         <p>
-          Por ser Septiembre, el mes oficial de la guerra a favor del NoFap, liberamos nuevamente como lo hicimos el año pasado, <span className="font-bold text-yellow-400">100 Protocolos Monje personalizados</span> con un valor único.
+          Para intentar cambiar la situación de vida de diversos hombres, perdidos en un pozo sin fondo donde la propia sociedad los arrojó, liberamos <span className="font-bold text-yellow-400">100 Protocolos Monje personalizados</span> con un valor único.
         </p>
         <p>
-          Para intentar una vez más cambiar la situación de vida de diversos hombres, perdidos en un pozo sin fondo donde la propia sociedad los arrojó.
+          Esta es una oportunidad para retomar el control de tu vida.
         </p>
         <p className="font-bold text-white mt-4 text-xl">
           Entonces, solo mientras duren los protocolos, también te llevas:

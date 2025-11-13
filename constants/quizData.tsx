@@ -10,7 +10,7 @@ export const QUIZ_DATA: ScreenData[] = [
   {
     id: 'gender',
     type: ScreenType.GENDER_SELECTION,
-    title: <>¿Quieres finalmente liberarte de los vicios y aprovechar todos los beneficios que <HighlightYellow>1 mes en NoFap</HighlightYellow> puede traer?</>,
+    title: <>¿Quieres finalmente liberarte de los vicios y aprovechar todos los beneficios que <HighlightYellow>un mes de NoFap</HighlightYellow> puede traer?</>,
     subtitle: 'Responde y recibe un protocolo personalizado para hacerte vencer:',
     buttonText: 'Sí, soy Hombre',
     options: [{ text: 'Soy Mujer', value: 'woman' }],
@@ -19,7 +19,7 @@ export const QUIZ_DATA: ScreenData[] = [
   {
     id: 'experience',
     type: ScreenType.SINGLE_CHOICE,
-    title: <>¿Ya conocías o participaste en el <HighlightYellow>NoFap September</HighlightYellow> antes?</>,
+    title: <>¿Ya conocías o participaste en el <HighlightYellow>desafío NoFap</HighlightYellow> antes?</>,
     options: [
       { text: 'Sí, lo intenté una vez', value: 'tried_once' },
       { text: 'Sí, conocía pero nunca lo intenté', value: 'knew_never_tried' },
@@ -80,7 +80,7 @@ export const QUIZ_DATA: ScreenData[] = [
           <p>El movimiento <HighlightYellow>NoFap</HighlightYellow> no es solo sobre "dejar de masturbarse".</p>
           <p>Nació cuando miles de hombres comenzaron a percibir que estaban <HighlightYellow>presos en un ciclo de vicio en pornografía</HighlightYellow> que estaba destruyendo sus vidas.</p>
           <p>O <HighlightYellow>NoFap</HighlightYellow> es la decisión de <HighlightYellow>retomar el control</HighlightYellow>, de liberarse de la esclavitud de la pantalla y no sufrir más con cosas como: <HighlightRed>compulsión, ansiedad, depresión y hasta disfunción eréctil</HighlightRed>.</p>
-          <p>Por eso septiembre se convirtió en el mes oficial del desafío: 30 días sin pornografía.</p>
+          <p>Por eso el desafío es de 30 días sin pornografía.</p>
           <p className="font-bold text-white text-xl">No es sobre represión, es sobre <HighlightYellow>libertad real</HighlightYellow>.</p>
         </div>
       </div>
@@ -200,7 +200,7 @@ export const QUIZ_DATA: ScreenData[] = [
     title: '¿Qué sería más valioso para ti hoy por 19 reales?',
     comparisonOptions: [
         { title: 'Una suscripción de OnlyFans', subtitle: '(¿en serio? ¿pagarías por eso?...)' , image: 'https://i.imgur.com/2c1Q1gM.png', value: 'onlyfans' },
-        { title: 'Conseguir vencer el NoFap September y recuperar todo lo que está siendo destruido', subtitle: '', image: 'https://i.imgur.com/N2a2C2g.jpeg', value: 'nofap' }
+        { title: 'Conseguir vencer el desafío NoFap y recuperar todo lo que está siendo destruido', subtitle: '', image: 'https://i.imgur.com/N2a2C2g.jpeg', value: 'nofap' }
     ]
   },
   {
