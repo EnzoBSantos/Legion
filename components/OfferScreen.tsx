@@ -13,6 +13,28 @@ const OfferScreen: React.FC = () => {
     return () => clearTimeout(timer);
   }, [timeLeft]);
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.hotmart.com/checkout/widget.min.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+    document.head.appendChild(link);
+
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    };
+  }, []);
+
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
 
@@ -98,6 +120,16 @@ const OfferScreen: React.FC = () => {
         >
           ¡Quiero asegurarlo ahora!
         </a>
+
+        <div className="mt-4">
+            <a 
+                onClick={(e) => e.preventDefault()} 
+                href="https://pay.hotmart.com/S102474434N?checkoutMode=2" 
+                className="hotmart-fb hotmart__button-checkout"
+            >
+                <img src='https://static.hotmart.com/img/btn-buy-green.png' alt="Comprar agora" />
+            </a>
+        </div>
 
       {/* Guarantee */}
       <div className="mt-12 max-w-xl mx-auto border-t border-slate-700 pt-8">
